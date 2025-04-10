@@ -1,0 +1,67 @@
+*{box-sizing: border-box; margin: 0; padding: 0;
+} /* Hace que el padding no afecte al tamaño de la tarjeta */
+
+
+
+body{
+    background-color: beige; font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+img{height: 100%; width: 100%;
+object-fit: cover; /* hace que la imagen ocupe todo el contenedor sin deformas*/
+}
+
+.producto{
+    width: 300px;
+    height: 120px;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex; /* ordenamiento por defecto por fila*/
+    flex-direction: row; /*hace que los elementos se coloquen en columna*/
+    gap: 10px; /*espacio */
+}
+
+.producto:nth-child(odd){
+    background-color: transparent;
+    box-shadow: -10px 10px 50px 5px rgba(0, 0,0,0.5);
+    color: gray;
+    flex-direction: row-reverse;
+}
+.fotoProducto{
+    /*height: 80px;*/
+    width: 80px;
+    /*flex-grow: 0; /*propiedad que habilita que si hay espacio en el contenedor se expande*/
+    /*flex-shrink: 0;*/
+    /*flex-basis: 80px; /*hace que la imagen ocupe el 80% del contenedor*/
+    flex: 0 0 80px; /*el prinmero referenxia al grow, segundo shrink y el otro basis*/
+    border-radius: 6px;
+    overflow: hidden; /* */
+    /*overflow: hidden; /*oculta el contenido que se sale del contenido*/
+}
+
+.datoProducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*espacio entre los elementos de la tarjeta */
+}
+
+.valoresProducto{
+    display: flex;
+    justify-content: space-between; /*espacio entre los elementos de la tarjeta */
+}
+
+.valoracion{
+    background-color: cornsilk;
+    height: 30px;
+    aspect-ratio: 1/1; /*hace que el elemento tenga una relacion de aspecto*/
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+   font-family: Georgia;
+}
+
+.column{
+display: flex;
+flex-direction: column;
+}
