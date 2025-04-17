@@ -21,13 +21,21 @@ object-fit: cover; /* hace que la imagen ocupe todo el contenedor sin deformas*/
     flex-direction: row; /*hace que los elementos se coloquen en columna*/
     gap: 10px; /*espacio */
 }
+/*para los elmentos pares usar even, y odd es para impares*/
+.producto:nth-child(even){ 
+    background-color: gray;
+}
 
 .producto:nth-child(odd){
+    background-color: black;
+    color: yellow;
+}
+/* .producto:nth-child(odd){
     background-color: transparent;
     box-shadow: -10px 10px 50px 5px rgba(0, 0,0,0.5);
     color: gray;
     flex-direction: row-reverse;
-}
+} */
 .fotoProducto{
     /*height: 80px;*/
     width: 80px;
@@ -52,7 +60,7 @@ object-fit: cover; /* hace que la imagen ocupe todo el contenedor sin deformas*/
 }
 
 .valoracion{
-    background-color: cornsilk;
+    background-color: rgb(1, 73, 83);
     height: 30px;
     aspect-ratio: 1/1; /*hace que el elemento tenga una relacion de aspecto*/
     border-radius: 50%;
@@ -63,5 +71,7 @@ object-fit: cover; /* hace que la imagen ocupe todo el contenedor sin deformas*/
 
 .column{
 display: flex;
+gap: 15px;
+padding: 3%;
 flex-direction: column;
 }
