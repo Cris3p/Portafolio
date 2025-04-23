@@ -6,6 +6,9 @@
 
 body{
     background-color: beige; font-family: 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    padding: .5em;
 }
 
 img{height: 100%; width: 100%;
@@ -13,7 +16,7 @@ object-fit: cover; /* hace que la imagen ocupe todo el contenedor sin deformas*/
 }
 
 .producto{
-    width: 300px;
+    width: 100%;
     height: 120px;
     background-color: blueviolet;
     padding: 10px;
@@ -30,6 +33,7 @@ object-fit: cover; /* hace que la imagen ocupe todo el contenedor sin deformas*/
 .producto:nth-child(odd){
     background-color: black;
     color: yellow;
+    flex-direction: row-reverse;
 }
 /* .producto:nth-child(odd){
     background-color: transparent;
@@ -70,9 +74,37 @@ object-fit: cover; /* hace que la imagen ocupe todo el contenedor sin deformas*/
    font-family: Georgia;
 }
 
-.column{
+.contenedorProductos{ /*column*/
 display: flex;
-gap: 15px;
-padding: 3%;
 flex-direction: column;
+gap: 0.7em;
+width: 100%;
+
+}
+
+/* ----------------------------------menu-------------------------------------- */
+header{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscadorCarrito{
+    display: flex;
+    gap: 0,5em;
+}
+
+
+
+.buscador input{
+    display: none;
 }
