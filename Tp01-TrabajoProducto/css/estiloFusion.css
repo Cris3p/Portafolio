@@ -24,6 +24,8 @@ body{
     display: grid;
     place-items: center;
     padding: 1em;
+    background-image: url(https://wallpaper.forfun.com/fetch/37/378e48ad9e4a20e6199d62dee602be7d.jpeg);
+    background-size: cover;
    /* position: relative; */
 }
 h4.logo{
@@ -58,13 +60,13 @@ h4.logo{
 .loginFormContainer{
     width: 70%;
     min-height: 100px;
-    background-color: white;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4px;
+    box-shadow: transparent;
 }
 #login{
  min-height: 30px;
