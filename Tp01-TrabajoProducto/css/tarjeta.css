@@ -1,11 +1,14 @@
 @import url('../../assets/css/fawesome-all.css');
+
 *{box-sizing: border-box; margin: 0; padding: 0;
+    list-style: none; /*elimina los puntos de la lista*/
 } /* Hace que el padding no afecte al tamaño de la tarjeta */
 
 
 
 body{
-    background-color: beige; font-family: 'Arial Narrow', Arial, sans-serif;
+   background-color: rgba(255, 255, 255, 0.959);
+   font-family: 'Arial Narrow', Arial, sans-serif;
     display: grid;
     place-items: center;
     padding: .5em;
@@ -27,12 +30,12 @@ object-fit: cover; /* hace que la imagen ocupe todo el contenedor sin deformas*/
 }
 /*para los elmentos pares usar even, y odd es para impares*/
 .producto:nth-child(even){ 
-    background-color: gray;
+    background-color: rgb(243, 104, 236);
 }
 
 .producto:nth-child(odd){
-    background-color: black;
-    color: yellow;
+    background-color: rgb(192, 97, 134);
+    color: rgb(26, 26, 26);
     flex-direction: row-reverse;
 }
 /* .producto:nth-child(odd){
@@ -103,8 +106,37 @@ header{
     gap: 0,5em;
 }
 
+header button {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.60em;
+    cursor: pointer;
+}
 
+header button:hover{
+    color: rgb(192, 6, 209);
+    text-shadow: 0px 0px 5px rgb(12, 194, 12);
+}
 
 .buscador input{
     display: none;
+}
+
+.logo{
+    font-size: 1.5em;
+    
+}
+
+.categoriarRopas{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    overflow-x: auto;
+}
+.categoriarRopas li{
+    font-size: 1.5em;
+    cursor: pointer;
+    flex: 0 0 150px;
+    background-color: rgb(206, 199, 255);
 }
