@@ -1,0 +1,66 @@
+@import url('../../assets/css/fawesome-all.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+}
+header{
+    width: 100%;
+    max-width: 430px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.Prin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    gap: 10px;
+}
+
+.bienvenida{
+    color: rgb(255, 255, 255);
+    top:85%;
+    position: absolute;
+}
+
+
+.categories{
+display: flex;
+justify-content: flex-start;
+gap: 1em;
+overflow: auto hidden;
+
+}
+
+.categories a{
+    flex: 0 0 100px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em;
+    padding: .5em;
+    transition: all 0.3s ease;
+
+    .fa-thin, .fa-regular, .fa{
+        font-size: 2.5em;
+    }
+    
+}
+
+.categories a:hover{
+    color: black;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
