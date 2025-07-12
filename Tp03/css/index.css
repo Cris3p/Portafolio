@@ -9,7 +9,7 @@
 .Prin {
     width: 100%;
     height: 35vh;
-    background-image: url("../img/gordon.jpg"); /* Asegurate que el path sea correcto */
+    background-image: url("../img/gordon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
