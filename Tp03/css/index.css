@@ -128,7 +128,7 @@ overflow: auto hidden;
     justify-content: center;
     align-items: center;
     gap: 0.25em;
-    padding: .5em;
+    padding: 0.5em;
     transition: all 0.3s ease;
     .fa-thin, .fa-regular, .fa, .fa-solid {
         font-size: 2.5em;
@@ -218,6 +218,7 @@ overflow: auto hidden;
     font-size: 1.2em;
     margin-right: 3px;
 }
+
 .rating {
     position: absolute;
     top: -5px;
