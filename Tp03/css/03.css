@@ -1,4 +1,5 @@
 @import url('../../assets/css/fawesome-all.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,15 @@
     text-decoration: none;
     list-style: none;
 }
-header{
+
+header {
     display: flex;
-align-items: center;    
-background-color: #fff;
+    align-items: center;
+    background-color: #fff;
     padding: 15px 20px;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
 }
+
 header button {
     display: flex;
     margin: 0px -25px;
@@ -21,14 +25,14 @@ header button {
     color: rgb(0, 0, 0);
     font-size: 16px;
     cursor: pointer;
-    .fa-solid{
+    .fa-solid {
         font-size: 2em;
     }
 }
-header h1{
-    flex-grow: 1; 
-    justify-content: center;
-    text-align: center; 
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
     font-size: 1.5em;
 }
 
@@ -36,68 +40,79 @@ header h1{
 .section {
     text-align: center;
     color: #555;
-    padding: 20px 20px 10px; 
-    font-size: 1.2em;
+    padding: 30px 30px 10px;
+    font-size: .90em;
     letter-spacing: 2px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
-.section h1{
-    border-bottom: 1px solid #c0ffc5;
+.linea {
+    border-bottom: 4px solid #60f3a2;
+    width: 8%;
+    margin-left: 46%;
 }
 
 
 .menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 10px;
-  border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    border: none;
+    background: white;
 }
 
 .menu-item:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 
 .menu-item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 12px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 12px;
 }
 
 
 .item-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
 }
 
 
 .item-name {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4px;
 }
 
 .item-desc {
-  font-size: 16px;
-  color: #666;
+    font-size: 16px;
+    color: #666;
 }
 
 .item-price {
-  background-color: #4CAF50;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: bold;
-  white-space: nowrap;
+    background-color: #4fec71;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 10px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    left: 9%;
+    top: 44%;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.panel{
+.panel {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -119,16 +134,19 @@ header h1{
     text-decoration: none;
     font-size: 0.9em;
     transition: color 0.3s ease;
-    padding: 12px 0; 
+    padding: 12px 0;
 }
+
 .seccion span {
     font-size: 1.5em;
     margin-bottom: 5px;
 }
+
 .seccion :hover {
     color: #3fe0c5;
     font-weight: bold;
 }
+
 .active::before {
     content: "";
     position: absolute;
@@ -136,7 +154,7 @@ header h1{
     left: 32%;
     width: 35%;
     height: 3px;
-    background-color: #3fe0c5; 
+    background-color: #3fe0c5;
     border-radius: 2px;
 }
 
@@ -144,7 +162,7 @@ header h1{
     color: #000;
     font-weight: bold;
     font-size: 1.5em;
-} 
+}
 
 .active:hover {
     color: #3fe0c5;

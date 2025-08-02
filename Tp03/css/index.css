@@ -140,6 +140,7 @@ overflow: auto hidden;
     background-color: #f0f0f0;
     border-radius: 5px;
 }
+
 .OffSection {
     padding: 50px 20px;
     max-width: 13000px;
@@ -154,18 +155,21 @@ overflow: auto hidden;
 }
 
 .offer-card {
+    display: flex;
     overflow: visible;
     position: relative;
-    display: flex;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 30vh;
+    width: 100%;
+    border: none;
+    
 }
 
 .offer-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -179,7 +183,7 @@ overflow: auto hidden;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: baseline;
 }
 
 .info h3 {
@@ -190,6 +194,7 @@ overflow: auto hidden;
 
 .info p {
     font-size: 1em;
+    margin-bottom: 5px;
     color: #666;
     line-height: 1.5;
 }
@@ -199,10 +204,12 @@ overflow: auto hidden;
     display: flex;
     align-items: center;
     margin: 10px 0;
-    }
+}
+
 .stars .opinion {
     color: #8f8f8f;
 }
+
 .stars .fa {
     color: rgb(105, 206, 74);
     font-size: 1.2em;
@@ -213,6 +220,7 @@ overflow: auto hidden;
     position: absolute;
     right: 2%;
 }
+
 .price .fa-solid{
        color: rgb(105, 206, 74);
     font-size: 1.2em;
