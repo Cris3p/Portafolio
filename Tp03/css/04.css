@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.portada {
+    width: 100%;
+    height: 93vh;
+    background-image: url("../img/menu1Yafuso.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+.product-details {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-title h1 {
+  font-size: 2em;
+  color: #111;
+}
+
+.price {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #3fe0c5;
+}
+
+.product-description {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.product-note label {
+  font-size: 0.95em;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.product-note input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95em;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  background-color: #eee;
+  border: none;
+  padding: 8px 14px;
+  font-size: 1.2em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.quantity span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.quantity button:hover {
+  background-color: #ddd;
+}
+
+.add-to-cart {
+  background-color: #3fe0c5;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #33c1af;
+}
