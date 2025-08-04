@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/03.css">
+  <link rel="stylesheet" href="../css/menu.css">
 </head>
 
 <body>
+  <div id="loader">
+    <span class="loader"></span>
+  </div>
   <header>
     <button><a href="../index.html"><i class="fa-solid fa-xmark"></i></a></button>
     <h1>Kayla Restaurante</h1>
@@ -35,6 +38,7 @@
         <div class="food-desc">Ternera curada cocida a baja temperatura</div>
       </div>
     </button>
+    
     <footer class="panel">
       <a href="kayla.html" class="seccion">
         <span>DETAILS</span>
@@ -49,5 +53,9 @@
     </footer>
   </main>
 </body>
-
+<script>
+    setTimeout(() => {
+      document.getElementById("loader").style.display = "none";
+    }, 2500);
+  </script>
 </html>
