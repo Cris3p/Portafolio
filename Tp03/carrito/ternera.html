@@ -4,47 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Producto - Restaurante</title>
-  <link rel="stylesheet" href="../css/04.css">
+  <link rel="stylesheet" href="../css/ternera.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
     <!-- <button onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button> -->
      <div class="portada">
-        
-      </div>
+       <button><a href="../html/menu.html"><i class="fa-solid fa-xmark"></i></a></button>
+     </div>
   </header>
-  <main class="product-page">
-    <div class="product-card">
-
-      <div class="product-details">
-        <div class="product-title">
-          <h1>Salmón Grillado</h1>
-          <span class="price">$4.900</span>
+  <main class="producto">
+    <div class="carta">
+      <div class="detalles">
+        <div class="titulo">
+          <h1>Ternera curada</h1>
+          <div class="price">$12.000</div>
         </div>
 
-        <p class="product-description">
-          Salmón fresco cocinado a la plancha con vegetales salteados y una suave reducción de cítricos.
+        <p class="descripcion">
+            Ternera curada cocida a baja temperatura, acompañada con brócoli, papas andinas y salsa de enebro.
+            La ternera se cocina lentamente para mantener su jugosidad, se sirve con vegetales frescos y se acompaña con una salsa de enebro aromática.
         </p>
 
-        <div class="product-note">
+        <div class="nota">
           <label for="note">Añadir nota:</label>
           <input type="text" id="note" placeholder="Ej: sin cebolla, sin morrón...">
         </div>
 
-        <div class="product-actions">
-          <div class="quantity">
+        <div class="carrito">
+          <div class="cantidad">
             <button>-</button>
             <span>2</span>
             <button>+</button>
           </div>
 
-          <button class="add-to-cart">
-            <i class="fa fa-cart-plus"></i> Añadir al carrito
+          <button class="añadir">
+            ADD TO CART
           </button>
         </div>
       </div>
-
     </div>
   </main>
 

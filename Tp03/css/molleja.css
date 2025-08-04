@@ -13,19 +13,33 @@ body {
 }
 
 .portada {
-    width: 100%;
-    height: 93vh;
-    background-image: url("../img/menu1Yafuso.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/ojobife.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-card {
+.portada button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8em;
+
+  a {
+    color: rgb(110, 110, 110);
+  }
+}
+
+.carta {
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
@@ -33,44 +47,48 @@ body {
   display: flex;
   flex-direction: column;
 }
-.product-details {
+
+.detalles {
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.product-title {
+.titulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.product-title h1 {
+.titulo h1 {
   font-size: 2em;
   color: #111;
 }
 
 .price {
-  font-size: 1.6em;
   font-weight: bold;
-  color: #3fe0c5;
+  background-color: #23c97c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px 0px 10px 0px;
+  font-size: 25px;
 }
 
-.product-description {
+.descripcion {
   font-size: 1em;
   color: #666;
   line-height: 1.6;
 }
 
-.product-note label {
+.nota label {
   font-size: 0.95em;
   color: #555;
   display: block;
   margin-bottom: 6px;
 }
 
-.product-note input {
+.nota input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -78,7 +96,7 @@ body {
   font-size: 0.95em;
 }
 
-.product-actions {
+.carrito {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,38 +104,40 @@ body {
   gap: 15px;
 }
 
-.quantity {
+.cantidad {
   display: flex;
   align-items: center;
   gap: 10px;
+  background-color: #23c97c;
+  font-size: 1.5em;
+  color: white;
 }
 
-.quantity button {
-  background-color: #eee;
+.cantidad button {
+  background-color: transparent;
   border: none;
-  padding: 8px 14px;
-  font-size: 1.2em;
-  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 1.5em;
   cursor: pointer;
+  color: white;
   transition: background-color 0.2s ease;
 }
 
-.quantity span {
-  font-size: 1.2em;
+.cantidad span {
+  font-size: 1.5em;
   font-weight: bold;
 }
 
-.quantity button:hover {
-  background-color: #ddd;
+.cantidad button:hover {
+  background-color: #20b871;
 }
 
-.add-to-cart {
-  background-color: #3fe0c5;
+.añadir {
+  background-color: #23c97c;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 15px 20px;
   color: white;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -126,6 +146,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.add-to-cart:hover {
-  background-color: #33c1af;
+.añadir:hover {
+  background-color: #20b871;
 }
