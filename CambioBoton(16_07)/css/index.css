@@ -1,0 +1,59 @@
+body{
+    display: grid;
+    place-items:  center;
+    background: linear-gradient(to bottom, darkgrey, black);
+    height: 100vh;
+}
+
+#botonSeguir{
+    padding: .4em 1em;
+    background-color: aliceblue;
+    color: steelblue;
+    text-align: center;
+    border: solid 2px steelblue;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.followCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 100px;
+    background-color: white;
+    border-radius: .75em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px;
+    gap:2em;
+}
+.perfil{
+    width: 80px;
+    height: 80px;
+    background-color: steelblue;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contenedorUsuario{
+    display: flex;
+    align-items: center;
+}
+
+.personaguir{
+    background-color: white;
+    padding: .25em 1em 1em 1em;
+    border-radius: .75em;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+/* 
+#botonSeguir:hover{
+   background-color: #8a2be2;
+   border: solid 2px brown;
+} */
+
+/* #botonSeguir:active{
+    border: solid 2px black;
+    background-color: rgba(149, 255, 149, 0.774);
+}  */
