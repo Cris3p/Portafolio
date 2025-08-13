@@ -97,7 +97,7 @@ body{
 .datos button:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background-color: #c0ffc5;
+    background-color: #eeeeee;
     border-radius: 5px;
 }
 
